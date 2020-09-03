@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/guilherme-x/Delic#readme",
   "dependencies": {
-    "firebase": "^7.19.1"
+    "firebase": "^7.19.1",
+    "firebase-tools": "^8.9.2"
   }
 }
