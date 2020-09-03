@@ -1,0 +1,22 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilherme-x/Delic.git"
+  },
+  "author": "guilherme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilherme-x/Delic/issues"
+  },
+  "homepage": "https://github.com/guilherme-x/Delic#readme",
+  "dependencies": {
+    "firebase": "^7.19.1"
+  }
+}

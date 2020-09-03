@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teste</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+         <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+  <script src="fb.js"></script>
+        <h1>Real Time Database</h1>
+        <ul id="usersList"></ul>
+        <hr>
+        <div class="col-md-4">
+            <form>
+                <div class="form-group">
+                    <label for="nameInput">Nome</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Nome">
+                </div>
+                <div class="form-group">
+                    <label for="ageInput">Nome</label>
+                    <input type="number" class="form-control" id='ageInput' placeholder="Idade">
+                </div>
+                <button class="btn btn-lg btn-block btn-primary" id="addButton">Adicionar</button>
+            </form>
+        </div>
+        <br><br>
+        <a href="index.html">Voltar para a home</a>
+        <script src="rtdb.js"></script>
+    </body>
+    <footer>
+
+    </footer>
+</html>
