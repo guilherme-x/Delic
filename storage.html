@@ -5,6 +5,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ">
     </head>
@@ -20,11 +21,17 @@
   <!-- Add Firebase products that you want to use -->
   <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
   <script src="fb.js"></script>
-        <h1>Bem vindo ao FB</h1>
-        <li><a href="real-time-database.html">Real Time Database</a></li>
-        <li><a href="authentication.html">Autenticação</a></li>
-        <li><a href="storage.html">Armazenamento</a></li>
+  
+        <h1>Armazenamento</h1>
+        <progress id="uploader" value="0" max="100"></progress>
+        <br>    
+        <input type="file" value="upload" id="fileButton">
+
+        <a class="button button-clear" href="index.html">Voltar para Home</a>
+        </div>
+        <script src="storage.js"></script>
     </body>
     <footer>
 
