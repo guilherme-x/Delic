@@ -5,7 +5,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ">
     </head>
@@ -26,35 +26,44 @@
         <h1>Autenticação</h1>
 
         <div class="col-md-4">
-            <h3 class="text-center" id="displayName">Você não está autenticado.</h3>
+            <h3 class="text-center" id="displayName">Você não está autenticado</h3>
             <br>
             <form>
                 <div class="form-group">
-                    <label for="emailInput">Nome</label>
-                    <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                    <label for="emailInput">E-mail</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="E-mail">
                 </div>
                 <div class="form-group">
-                    <label for="passwordInput">Nome</label>
-                    <input type="password" class="form-control" id='passwordInput' placeholder="Senha">
+                    <label for="passwordInput">Senha</label>
+                    <input type="password" class="form-control" id="passwordInput" placeholder="Senha">
                 </div>
             </form>
-
-            <button class="btn btn-lg btn-block btn-primary" id="authEmailPassButton" ">Entrar</button>
-            <button class="btn btn-lg btn-block btn-primary" id="createUserButton">Criar Nova Conta</button>
+    
+            <button class="btn btn-lg btn-block btn-primary" id="authEmailPassButton">Autenticar</button>
+            <button class="btn btn-lg btn-block btn-info" id="createUserButton">Criar Nova Conta</button>
             <br>
-
+    
             <p class="text-center"><small>-- ou --</small></p>
-
+    
             <p class="text-center">
-                <button class="btn btn-lg btn-default" id="authGitHubButton" class="fa fa-github fa-2x"></button>
-                <button class="btn btn-lg btn-primary" id="authFacebookButton" class="fa fa-facebook fa-2x"></button>
-                <button class="btn btn-lg btn-info" id="authTwitterButton" class="fa fa-twitter fa-2x"></button>
-                <button class="btn btn-lg btn-danger" id="authGoogleButton" class="fa fa-google fa-2x"></button>
-                <button class="btn btn-lg btn-warning" id="authAnonymouslyButton" class="fa fa-user fa-2x"></button>
+                <button class="btn btn-lg btn-default" id="authGitHubButton"><i class="fa fa-github fa-2x"></i></button>
+                <button class="btn btn-lg btn-primary" id="authFacebookButton"><i class="fa fa-facebook fa-2x"></i></button>
+                <button class="btn btn-lg btn-info" id="authTwitterButton"><i class="fa fa-twitter fa-2x"></i></button>
+                <button class="btn btn-lg btn-danger" id="authGoogleButton"><i class="fa fa-google fa-2x"></i></button>
+                <button class="btn btn-lg btn-warning" id="authAnonymouslyButton"><i class="fa fa-user fa-2x"></i></button>
             </p>
-
+    
+            <br>
+    
+            <p class="text-center">
+                <button class="btn btn-lg btn-block btn-default" id="logOutButton">Sair</button>
+            </p>
         </div>
-
+    
+        <br><br>
+        <a class="button button-clear" href="index.html">Voltar para Home</a>
+            <script src="authentication.js"></script>
+        </div>
     </body>
     <footer>
 
